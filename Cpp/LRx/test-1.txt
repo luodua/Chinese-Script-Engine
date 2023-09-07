@@ -1,0 +1,7 @@
+{
+int a;
+a=10;
+if(a==10) a=a+a;else a=11;
+if(a<10) a=a+a;
+if(a>10) a=a+a;
+}

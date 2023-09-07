@@ -1,0 +1,773 @@
+{
+int a;
+a=10;
+if(a==10) a=a+a;else a=11;
+if(a<10) a=a+a;
+if(a>10) a=a+a;
+}
+
+
+	Op	arg1	arg2	result
+(1)	=	|	10	|		|	a	|	
+(2)	j==	|	a	|	10	|	(4)	|	
+(3)	j	|		|		|	(7)	|	
+(4)	+	|	a	|	a	|	t1	|	
+(5)	=	|	t1	|		|	a	|	
+(6)	j	|		|		|	(8)	|	
+(7)	=	|	11	|		|	a	|	
+(8)	j<	|	a	|	10	|	(10)	|	
+(9)	j	|		|		|	(12)	|	
+(10)	+	|	a	|	a	|	t2	|	
+(11)	=	|	t2	|		|	a	|	
+(12)	j>	|	a	|	10	|	(14)	|	
+(13)	j	|		|		|	(16)	|	
+(14)	+	|	a	|	a	|	t3	|	
+(15)	=	|	t3	|		|	a	|	
+(16)	
+
+
+下一个<{, 界符>
+0移入，actiontable位置（列 = 25,行 = 0）,action = 3 。
+
+  栈内容：<{, 界符>
+下一个<int, key>
+归约，对应文法序号 = 3，gototable 位置（列(未转换前) = 3, 行 = 3）。
+
+  栈内容：<{, 界符><decls>
+下一个<int, key>
+2移入，actiontable位置（列 = 28,行 = 4）,action = 8 。
+
+  栈内容：<{, 界符><decls>int
+下一个<a, id>
+归约，对应文法序号 = 6，gototable 位置（列(未转换前) = 6, 行 = 4）。
+
+  栈内容：<{, 界符><decls><type>
+下一个<a, id>
+3移入，actiontable位置（列 = 30,行 = 6）,action = 10 。
+
+  栈内容：<{, 界符><decls><type>a
+下一个<;, 界符>
+4移入，actiontable位置（列 = 9,行 = 10）,action = 22 。
+
+  栈内容：<{, 界符><decls><type>a<;, 界符>
+下一个<a, id>
+归约，对应文法序号 = 4，gototable 位置（列(未转换前) = 4, 行 = 4）。
+
+  栈内容：<{, 界符><decls><decl>
+下一个<a, id>
+归约，对应文法序号 = 2，gototable 位置（列(未转换前) = 2, 行 = 3）。
+
+  栈内容：<{, 界符><decls>
+下一个<a, id>
+归约，对应文法序号 = 8，gototable 位置（列(未转换前) = 8, 行 = 4）。
+
+  栈内容：<{, 界符><decls><stmts>
+下一个<a, id>
+3移入，actiontable位置（列 = 30,行 = 7）,action = 16 。
+
+  栈内容：<{, 界符><decls><stmts>a
+下一个<=, 赋值>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 7）。
+
+  栈内容：<{, 界符><decls><stmts><loc>
+下一个<=, 赋值>
+4移入，actiontable位置（列 = 12,行 = 13）,action = 24 。
+
+  栈内容：<{, 界符><decls><stmts><loc><=>
+下一个<10, num>
+5移入，actiontable位置（列 = 31,行 = 24）,action = 46 。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><num>
+下一个<;, 界符>
+归约，对应文法序号 = 41，gototable 位置（列(未转换前) = 41, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><factor>
+下一个<;, 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><unary>
+下一个<;, 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><term>
+下一个<;, 界符>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><expr>
+下一个<;, 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><rel>
+下一个<;, 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><equality>
+下一个<;, 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><join>
+下一个<;, 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><bool_term>
+下一个<;, 界符>
+6移入，actiontable位置（列 = 9,行 = 33）,action = 78 。
+
+  栈内容：<{, 界符><decls><stmts><loc><=><bool_term><;, 界符>
+下一个<if, key>
+归约，对应文法序号 = 9，gototable 位置（列(未转换前) = 9, 行 = 7）。
+
+四元式：(<=>  a  -  10)
+  栈内容：<{, 界符><decls><stmts><stmt>
+下一个<if, key>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 12）。
+
+  栈内容：<{, 界符><decls><stmts><stmt><M>
+下一个<if, key>
+归约，对应文法序号 = 7，gototable 位置（列(未转换前) = 7, 行 = 4）。
+
+  栈内容：<{, 界符><decls><stmts>
+下一个<if, key>
+3移入，actiontable位置（列 = 22,行 = 7）,action = 14 。
+
+  栈内容：<{, 界符><decls><stmts><if>
+下一个<(, 界符>
+4移入，actiontable位置（列 = 3,行 = 14）,action = 26 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>
+下一个<a, id>
+5移入，actiontable位置（列 = 30,行 = 26）,action = 61 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>a
+下一个<==, relop>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><loc>
+下一个<==, relop>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><factor>
+下一个<==, relop>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><unary>
+下一个<==, relop>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><term>
+下一个<==, relop>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>
+下一个<==, relop>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><rel>
+下一个<==, relop>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality>
+下一个<==, relop>
+6移入，actiontable位置（列 = 13,行 = 53）,action = 100 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop>
+下一个<10, num>
+7移入，actiontable位置（列 = 31,行 = 100）,action = 64 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><num>
+下一个<), 界符>
+归约，对应文法序号 = 41，gototable 位置（列(未转换前) = 41, 行 = 100）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><factor>
+下一个<), 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 100）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><unary>
+下一个<), 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 100）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><term>
+下一个<), 界符>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 100）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><expr>
+下一个<), 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 100）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality><==, relop><rel>
+下一个<), 界符>
+归约，对应文法序号 = 22，gototable 位置（列(未转换前) = 22, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><rel>
+下一个<), 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality>
+下一个<), 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><join>
+下一个<), 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term>
+下一个<), 界符>
+6移入，actiontable位置（列 = 4,行 = 51）,action = 96 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符>
+下一个<a, id>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 96）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>
+下一个<a, id>
+8移入，actiontable位置（列 = 30,行 = 148）,action = 16 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>a
+下一个<=, 赋值>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 148）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc>
+下一个<=, 赋值>
+9移入，actiontable位置（列 = 12,行 = 195）,action = 225 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>
+下一个<a, id>
+10移入，actiontable位置（列 = 30,行 = 225）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>a
+下一个<+, op>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><loc>
+下一个<+, op>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><factor>
+下一个<+, op>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><unary>
+下一个<+, op>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><term>
+下一个<+, op>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<+, op>
+11移入，actiontable位置（列 = 6,行 = 37）,action = 85 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>
+下一个<a, id>
+12移入，actiontable位置（列 = 30,行 = 85）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>a
+下一个<;, 界符>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><loc>
+下一个<;, 界符>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><factor>
+下一个<;, 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><unary>
+下一个<;, 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><term>
+下一个<;, 界符>
+归约，对应文法序号 = 30，gototable 位置（列(未转换前) = 30, 行 = 225）。
+
+四元式：(<+>  a  -  a)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<;, 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><rel>
+下一个<;, 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><equality>
+下一个<;, 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><join>
+下一个<;, 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term>
+下一个<;, 界符>
+11移入，actiontable位置（列 = 9,行 = 244）,action = 262 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term><;, 界符>
+下一个<else, key>
+归约，对应文法序号 = 9，gototable 位置（列(未转换前) = 9, 行 = 148）。
+
+四元式：(<=>  a  -  1)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt>
+下一个<else, key>
+归约，对应文法序号 = 46，gototable 位置（列(未转换前) = 46, 行 = 194）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>
+下一个<else, key>
+10移入，actiontable位置（列 = 20,行 = 224）,action = 243 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else
+下一个<a, id>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 243）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M>
+下一个<a, id>
+12移入，actiontable位置（列 = 30,行 = 261）,action = 16 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M>a
+下一个<=, 赋值>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 261）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc>
+下一个<=, 赋值>
+13移入，actiontable位置（列 = 12,行 = 13）,action = 24 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=>
+下一个<11, num>
+14移入，actiontable位置（列 = 31,行 = 24）,action = 46 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><num>
+下一个<;, 界符>
+归约，对应文法序号 = 41，gototable 位置（列(未转换前) = 41, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><factor>
+下一个<;, 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><unary>
+下一个<;, 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><term>
+下一个<;, 界符>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><expr>
+下一个<;, 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><rel>
+下一个<;, 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><equality>
+下一个<;, 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><join>
+下一个<;, 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 24）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><bool_term>
+下一个<;, 界符>
+15移入，actiontable位置（列 = 9,行 = 33）,action = 78 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><loc><=><bool_term><;, 界符>
+下一个<if, key>
+归约，对应文法序号 = 9，gototable 位置（列(未转换前) = 9, 行 = 261）。
+
+四元式：(<=>  a  -  11)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt><N>else<M><stmt>
+下一个<if, key>
+归约，对应文法序号 = 11，gototable 位置（列(未转换前) = 11, 行 = 7）。
+
+  栈内容：<{, 界符><decls><stmts><stmt>
+下一个<if, key>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 12）。
+
+  栈内容：<{, 界符><decls><stmts><stmt><M>
+下一个<if, key>
+归约，对应文法序号 = 7，gototable 位置（列(未转换前) = 7, 行 = 4）。
+
+  栈内容：<{, 界符><decls><stmts>
+下一个<if, key>
+3移入，actiontable位置（列 = 22,行 = 7）,action = 14 。
+
+  栈内容：<{, 界符><decls><stmts><if>
+下一个<(, 界符>
+4移入，actiontable位置（列 = 3,行 = 14）,action = 26 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>
+下一个<a, id>
+5移入，actiontable位置（列 = 30,行 = 26）,action = 61 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>a
+下一个< <, relop>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><loc>
+下一个< <, relop>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><factor>
+下一个< <, relop>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><unary>
+下一个< <, relop>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><term>
+下一个< <, relop>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>
+下一个< <, relop>
+6移入，actiontable位置（列 = 10,行 = 55）,action = 101 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop>
+下一个<10, num>
+7移入，actiontable位置（列 = 31,行 = 101）,action = 163 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop><num>
+下一个<), 界符>
+归约，对应文法序号 = 41，gototable 位置（列(未转换前) = 41, 行 = 101）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop><factor>
+下一个<), 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 101）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop><unary>
+下一个<), 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 101）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop><term>
+下一个<), 界符>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 101）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< <, relop><expr>
+下一个<), 界符>
+归约，对应文法序号 = 25，gototable 位置（列(未转换前) = 25, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><rel>
+下一个<), 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality>
+下一个<), 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><join>
+下一个<), 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term>
+下一个<), 界符>
+6移入，actiontable位置（列 = 4,行 = 51）,action = 96 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符>
+下一个<a, id>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 96）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>
+下一个<a, id>
+8移入，actiontable位置（列 = 30,行 = 148）,action = 16 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>a
+下一个<=, 赋值>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 148）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc>
+下一个<=, 赋值>
+9移入，actiontable位置（列 = 12,行 = 195）,action = 225 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>
+下一个<a, id>
+10移入，actiontable位置（列 = 30,行 = 225）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>a
+下一个<+, op>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><loc>
+下一个<+, op>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><factor>
+下一个<+, op>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><unary>
+下一个<+, op>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><term>
+下一个<+, op>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<+, op>
+11移入，actiontable位置（列 = 6,行 = 37）,action = 85 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>
+下一个<a, id>
+12移入，actiontable位置（列 = 30,行 = 85）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>a
+下一个<;, 界符>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><loc>
+下一个<;, 界符>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><factor>
+下一个<;, 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><unary>
+下一个<;, 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><term>
+下一个<;, 界符>
+归约，对应文法序号 = 30，gototable 位置（列(未转换前) = 30, 行 = 225）。
+
+四元式：(<+>  a  -  a)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<;, 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><rel>
+下一个<;, 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><equality>
+下一个<;, 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><join>
+下一个<;, 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term>
+下一个<;, 界符>
+11移入，actiontable位置（列 = 9,行 = 244）,action = 262 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term><;, 界符>
+下一个<if, key>
+归约，对应文法序号 = 9，gototable 位置（列(未转换前) = 9, 行 = 148）。
+
+四元式：(<=>  a  -  2)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt>
+下一个<if, key>
+归约，对应文法序号 = 10，gototable 位置（列(未转换前) = 10, 行 = 7）。
+
+  栈内容：<{, 界符><decls><stmts><stmt>
+下一个<if, key>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 12）。
+
+  栈内容：<{, 界符><decls><stmts><stmt><M>
+下一个<if, key>
+归约，对应文法序号 = 7，gototable 位置（列(未转换前) = 7, 行 = 4）。
+
+  栈内容：<{, 界符><decls><stmts>
+下一个<if, key>
+3移入，actiontable位置（列 = 22,行 = 7）,action = 14 。
+
+  栈内容：<{, 界符><decls><stmts><if>
+下一个<(, 界符>
+4移入，actiontable位置（列 = 3,行 = 14）,action = 26 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>
+下一个<a, id>
+5移入，actiontable位置（列 = 30,行 = 26）,action = 61 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符>a
+下一个< >, relop>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><loc>
+下一个< >, relop>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><factor>
+下一个< >, relop>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><unary>
+下一个< >, relop>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><term>
+下一个< >, relop>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>
+下一个< >, relop>
+6移入，actiontable位置（列 = 14,行 = 55）,action = 105 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop>
+下一个<10, num>
+7移入，actiontable位置（列 = 31,行 = 105）,action = 163 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop><num>
+下一个<), 界符>
+归约，对应文法序号 = 41，gototable 位置（列(未转换前) = 41, 行 = 105）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop><factor>
+下一个<), 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 105）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop><unary>
+下一个<), 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 105）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop><term>
+下一个<), 界符>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 105）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><expr>< >, relop><expr>
+下一个<), 界符>
+归约，对应文法序号 = 28，gototable 位置（列(未转换前) = 28, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><rel>
+下一个<), 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><equality>
+下一个<), 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><join>
+下一个<), 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 26）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term>
+下一个<), 界符>
+6移入，actiontable位置（列 = 4,行 = 51）,action = 96 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符>
+下一个<a, id>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 96）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>
+下一个<a, id>
+8移入，actiontable位置（列 = 30,行 = 148）,action = 16 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M>a
+下一个<=, 赋值>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 148）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc>
+下一个<=, 赋值>
+9移入，actiontable位置（列 = 12,行 = 195）,action = 225 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>
+下一个<a, id>
+10移入，actiontable位置（列 = 30,行 = 225）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=>a
+下一个<+, op>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><loc>
+下一个<+, op>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><factor>
+下一个<+, op>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><unary>
+下一个<+, op>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><term>
+下一个<+, op>
+归约，对应文法序号 = 32，gototable 位置（列(未转换前) = 32, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<+, op>
+11移入，actiontable位置（列 = 6,行 = 37）,action = 85 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>
+下一个<a, id>
+12移入，actiontable位置（列 = 30,行 = 85）,action = 43 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+>a
+下一个<;, 界符>
+归约，对应文法序号 = 17，gototable 位置（列(未转换前) = 17, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><loc>
+下一个<;, 界符>
+归约，对应文法序号 = 40，gototable 位置（列(未转换前) = 40, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><factor>
+下一个<;, 界符>
+归约，对应文法序号 = 38，gototable 位置（列(未转换前) = 38, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><unary>
+下一个<;, 界符>
+归约，对应文法序号 = 35，gototable 位置（列(未转换前) = 35, 行 = 85）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr><+><term>
+下一个<;, 界符>
+归约，对应文法序号 = 30，gototable 位置（列(未转换前) = 30, 行 = 225）。
+
+四元式：(<+>  a  -  a)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><expr>
+下一个<;, 界符>
+归约，对应文法序号 = 29，gototable 位置（列(未转换前) = 29, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><rel>
+下一个<;, 界符>
+归约，对应文法序号 = 24，gototable 位置（列(未转换前) = 24, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><equality>
+下一个<;, 界符>
+归约，对应文法序号 = 21，gototable 位置（列(未转换前) = 21, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><join>
+下一个<;, 界符>
+归约，对应文法序号 = 19，gototable 位置（列(未转换前) = 19, 行 = 225）。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term>
+下一个<;, 界符>
+11移入，actiontable位置（列 = 9,行 = 244）,action = 262 。
+
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><loc><=><bool_term><;, 界符>
+下一个<}, 界符>
+归约，对应文法序号 = 9，gototable 位置（列(未转换前) = 9, 行 = 148）。
+
+四元式：(<=>  a  -  3)
+  栈内容：<{, 界符><decls><stmts><if><(, 界符><bool_term><), 界符><M><stmt>
+下一个<}, 界符>
+归约，对应文法序号 = 10，gototable 位置（列(未转换前) = 10, 行 = 7）。
+
+  栈内容：<{, 界符><decls><stmts><stmt>
+下一个<}, 界符>
+归约，对应文法序号 = 45，gototable 位置（列(未转换前) = 45, 行 = 12）。
+
+  栈内容：<{, 界符><decls><stmts><stmt><M>
+下一个<}, 界符>
+归约，对应文法序号 = 7，gototable 位置（列(未转换前) = 7, 行 = 4）。
+
+  栈内容：<{, 界符><decls><stmts>
+下一个<}, 界符>
+3移入，actiontable位置（列 = 27,行 = 7）,action = 18 。
+
+  栈内容：<{, 界符><decls><stmts><}, 界符>
+下一个归约，对应文法序号 = 1，gototable 位置（列(未转换前) = 1, 行 = 0）。
+
+  栈内容：<block>
+下一个归约，对应文法序号 = 0，gototable 位置（列(未转换前) = 0, 行 = 0）。
+
+  栈内容：<program>
+下一个
+ accept！！ 0
+>> 瘕s
+
+--------------------------------
+Process exited after 8 seconds with return value 0
+请按任意键继续. . .
